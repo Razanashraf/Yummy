@@ -1,0 +1,178 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+li {
+  list-style: none;
+}
+* {
+  box-sizing: border-box;
+}
+
+/** HIDDEN NAVBAR */
+.hidden-nav-side {
+  width: 260px;
+  z-index: 999;
+}
+.social-list {
+  margin-left: 0px;
+  padding-left: 0px;
+}
+.down {
+  padding-left: 20px;
+}
+.nav-item li {
+  margin-left: 0px;
+  padding-left: 20px;
+  font-size: 17px;
+  padding-block: 5px;
+  cursor: pointer;
+}
+.nav-item {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.topInWillOpen {
+  position: relative;
+  top: 400px;
+}
+
+/* * SHOWN NAVBAR */
+.logo {
+  width: 50px;
+}
+.icons {
+  font-size: 15px;
+  margin-inline: auto;
+  padding-block: 6px;
+  cursor: pointer;
+}
+.changeable-icon {
+  padding-left: 12px;
+  font-size: 30px;
+  cursor: pointer;
+}
+.side-nav {
+  width: fit-content;
+  z-index: 99 !important;
+}
+.remove-margin {
+  margin-left: 0px;
+  left: 11%;
+}
+
+/* ^ overlay on main photos */
+.overlay-photo {
+  background-color: rgba(255, 255, 255, 0.7);
+  height: 100%;
+  width: 95.5%;
+  top: 100%;
+  transition: top 400ms;
+}
+.meal-div:hover .overlay-photo {
+  top: 0;
+}
+
+/* ^ OVERLAY MEALS IN MAIN */
+.vh-120 {
+  height: 120vh;
+}
+
+.form-control::placeholder {
+  color: rgb(198, 197, 197);
+}
+/* ^ CATEGORY OVERLAY */
+.category-overlay {
+  background-color: rgba(255, 255, 255, 0.7);
+  height: 100%;
+  width: 95.5%;
+  top: 100%;
+  transition: top 400ms;
+}
+.category-div:hover .category-overlay {
+  top: 0;
+}
+.area-div {
+  cursor: pointer;
+}
+
+/* ^ LOADER */
+.loader {
+  color: #fff;
+  font-size: 10px;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  position: relative;
+  text-indent: -9999em;
+  animation: mulShdSpin 1.3s infinite linear;
+  transform: translateZ(0);
+}
+
+.loading-screen {
+  top: 0;
+  left: 0;
+  display: flex;
+  z-index: 9;
+}
+
+@keyframes mulShdSpin {
+  0%,
+  100% {
+    box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em,
+      0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+  }
+  12.5% {
+    box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em,
+      0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+  }
+  25% {
+    box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0,
+      0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+  }
+  37.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em,
+      0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  50% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em,
+      0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  62.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em,
+      0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+  }
+  75% {
+    box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em,
+      0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+  }
+  87.5% {
+    box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em,
+      0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+  }
+}
+/* ! INNER LOADING SCREEN */
+.inner-loading {
+  display: flex;
+  z-index: 9;
+}
+.loadertwo {
+  color: #fff;
+  font-size: 10px;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  position: relative;
+  text-indent: -9999em;
+  animation: mulShdSpin 1.3s infinite linear;
+  transform: translateZ(0);
+  left: -50px;
+  bottom: 50px;
+}
+.addTop {
+  top: -2px;
+}
+.w-35 {
+  width: 35%;
+}
